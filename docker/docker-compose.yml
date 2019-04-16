@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  website:
+    image: website
+    build: 
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - 80:80
