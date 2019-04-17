@@ -14,9 +14,10 @@
         <h1><a href="{{ url_for('main.index') }}">Pawel Protas</a></h1>
         <nav>
             <ul>
-                <li><a href="{{ url_for('main.about') }}">About</a></li>
-                <li><a href="{{ url_for('main.portfolio') }}">Portfolio</a></li>
-                <li><a href="{{ url_for('main.contact') }}">Contact</a></li>
+                {% for li in ['main.about', 'main.portfolio', 'main.contact'] %}
+                <li {%- if request.path == url_for(li) %} class="active" {% endif %}><a
+                        href="{{ url_for(li) }}">{{ li[5:] | capitalize }}</a></li>
+                {% endfor %}
             </ul>
         </nav>
     </header>
