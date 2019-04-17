@@ -4,7 +4,5 @@ services:
   website:
     image: website
     build: 
-      context: ..
+      context: .. # Go back to root dir
       dockerfile: docker/Dockerfile
-    ports:
-      - 80:80
