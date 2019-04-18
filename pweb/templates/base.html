@@ -7,12 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pawel Protas - {% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/base.js') }}"></script>
+    {% block scripts %}{% endblock %}
 </head>
 
 <body>
     <header>
-        <h1><a href="{{ url_for('main.index') }}">Pawel Protas</a></h1>
         <nav>
+            <a {%- if request.path == url_for('main.index') %} class="active" {% endif %} href="{{ url_for('main.index') }}">Pawel Protas</a>
             <ul>
                 {% for li in ['main.about', 'main.portfolio', 'main.contact'] %}
                 <li {%- if request.path == url_for(li) %} class="active" {% endif %}><a
@@ -21,7 +23,9 @@
             </ul>
         </nav>
     </header>
-    {% block content %}{% endblock %}
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
     <footer>
 
     </footer>
