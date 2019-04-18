@@ -1,3 +1,0 @@
-graft pweb/static
-graft pweb/templates
-global-exclude *.pyc

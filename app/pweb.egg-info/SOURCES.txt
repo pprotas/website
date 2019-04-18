@@ -1,9 +1,0 @@
-MANIFEST.in
-README.md
-setup.py
-pweb.egg-info/PKG-INFO
-pweb.egg-info/SOURCES.txt
-pweb.egg-info/dependency_links.txt
-pweb.egg-info/not-zip-safe
-pweb.egg-info/requires.txt
-pweb.egg-info/top_level.txt
