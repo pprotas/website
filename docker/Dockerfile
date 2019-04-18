@@ -7,7 +7,6 @@ EXPOSE 80
 WORKDIR /app
 COPY . /app
 
-RUN python3 -m pip install -r docker/requirements.txt
 RUN pip3 install .
 ENV FLASK_APP pweb
 
