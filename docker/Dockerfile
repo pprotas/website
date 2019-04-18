@@ -10,5 +10,6 @@ COPY . /app
 RUN pip3 install .
 ENV FLASK_APP pweb
 
-CMD ["flask", "run", "--host=0.0.0.0", "--port=80"]
+#CMD ["flask", "run", "--host=0.0.0.0", "--port=80"]
+CMD flask run --port=$PORT
 # Change this using http://flask.pocoo.org/docs/1.0/tutorial/deploy/
