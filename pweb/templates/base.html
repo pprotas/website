@@ -13,14 +13,17 @@
 
 <body>
     <header>
-        <nav>
-            <a {%- if request.path == url_for('main.index') %} class="active" {% endif %} href="{{ url_for('main.index') }}">Pawel Protas</a>
-            <ul>
-                {% for li in ['main.about', 'main.portfolio', 'main.contact'] %}
-                <li {%- if request.path == url_for(li) %} class="active" {% endif %}><a
-                        href="{{ url_for(li) }}">{{ li[5:] | capitalize }}</a></li>
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <a {%- if request.path == url_for('main.index') %} class="active" {% endif %}
+                    href="{{ url_for('main.index') }}">Pawel Protas</a>
+            </div>
+            <div class="nav-menu">
+                {% for navitem in ['main.about', 'main.portfolio', 'main.contact'] %}
+                <a {%- if request.path == url_for(navitem) %} class="active" {% endif %}
+                    href="{{ url_for(navitem) }}">{{ navitem[5:] | capitalize }}</a>
                 {% endfor %}
-            </ul>
+            </div>
         </nav>
     </header>
     <div class="content">
