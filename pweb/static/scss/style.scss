@@ -15,19 +15,23 @@ body {
     font-family: 'Source Code Pro', monospace;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display        : grid;
     justify-items  : center;
-    scroll-behavior: smooth;
 
     a {
         color          : $link-color;
         text-decoration: none;
         padding        : 1vh;
         margin         : -1vh;
-        transition     : color 0.25s;
+        transition     : color 0.25s, text-shadow 0.25s;
 
         &:hover {
+            text-shadow: 0px 0px 1px $secondary-color;
             color: $main-color;
         }
     }
@@ -50,7 +54,8 @@ header {
         box-shadow      : 0 1px 5px black;
 
         a:hover {
-            color: $secondary-color;
+            text-shadow: none;
+            color: $secondary-color; 
         }
     }
 
@@ -73,6 +78,7 @@ header {
             &.active {
                 font-weight: 600;
                 color      : $accent-color;
+                text-shadow: none;
             }
         }
 
