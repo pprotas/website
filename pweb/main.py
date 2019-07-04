@@ -1,3 +1,19 @@
+# Linux:
+# export FLASK_APP=pweb
+# export FLASK_ENV=development
+# flask run
+
+# Windows cmd:
+# set FLASK_APP=pweb
+# set FLASK_ENV=development
+# flask run
+
+# Windows PS:
+# $env:FLASK_APP="pweb"
+# $env:FLASK_ENV="development"
+# flask run
+
+
 from flask import (Blueprint, request, redirect, render_template)
 
 

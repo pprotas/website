@@ -6,7 +6,5 @@ window.onload = () => {
         } else if (header.classList.contains("scrolled")) {
             header.classList.remove("scrolled");
         }
-
-        console.log(window.pageYOffset);
     });
 };
