@@ -1,4 +1,4 @@
-# docker build -t website -f docker/Dockerfile . (from root dir)
+# docker build -t website -f Dockerfile . (from root dir)
 FROM python:alpine
 
 LABEL Name=pprotas/website Version=0.0.1
