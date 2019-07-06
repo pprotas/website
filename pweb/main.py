@@ -9,9 +9,7 @@
 # flask run
 
 # Windows PS:
-# $env:FLASK_APP="pweb"
-# $env:FLASK_ENV="development"
-# flask run
+# $env:FLASK_APP="pweb"; $env:FLASK_ENV="development"; flask run
 
 
 from flask import (Blueprint, request, redirect, render_template)

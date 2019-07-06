@@ -19,7 +19,6 @@ body a {
   color: gray;
   text-decoration: none;
   padding: 1vh;
-  margin: -1vh;
   transition: color 0.25s, text-shadow 0.25s;
 }
 body a:hover {
@@ -41,7 +40,7 @@ header {
 header.scrolled {
   background-color: white;
   height: 50px;
-  box-shadow: 0 1px 5px black;
+  box-shadow: 0 1px 5px gray;
 }
 header.scrolled a:hover {
   text-shadow: none;
@@ -64,13 +63,13 @@ header .nav-bar a {
   position: relative;
   justify-self: inherit;
 }
-header .nav-bar a.active {
-  font-weight: 600;
+header .nav-bar a:focus {
   color: #ab865b;
   text-shadow: none;
 }
 header .nav-bar .nav-logo {
   justify-self: left;
+  color: #ab865b;
 }
 header .nav-bar .nav-menu {
   display: flex;
@@ -87,9 +86,13 @@ header .nav-bar .nav-menu {
   width: 100%;
   color: white;
   padding-top: 50px;
+  height: fit-content;
 }
 .content .container.fullscreen {
-  height: 100vh;
+  min-height: 100vh;
+}
+.content .container.cropped {
+  min-height: calc(100vh - 100px - 3em);
 }
 .content .container.black {
   background-color: black;
@@ -99,16 +102,55 @@ header .nav-bar .nav-menu {
   background-color: white;
   color: black;
 }
+.content .container .container-header {
+  color: #ab865b;
+  font-weight: 700;
+  font-size: 3em;
+  width: max-content;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
 .content .card {
   margin: auto;
-  width: 90%;
+  width: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 @media (min-width: 1280px) {
   .content .card {
     width: 70%;
   }
+}
+@media (max-width: 600hpx) {
+  .content .card {
+    flex-direction: column;
+  }
+}
+.content .card.column {
+  flex-direction: column;
+}
+.content .card .card-item {
+  flex-basis: 100%;
+  padding: 10px 10px;
+}
+.content .card .card-item img {
+  box-shadow: 1px 1px 5px gray;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+.content .card .card-item .card-item-title {
+  color: #ab865b;
+  font-weight: 700;
+  font-size: 1.25em;
+}
+.content .card .card-item a {
+  padding: initial;
+  margin: initial;
+}
+.content .card .card-item a:hover {
+  text-shadow: none;
+  color: #ab865b;
 }
 .content .card .name {
   color: #ab865b;

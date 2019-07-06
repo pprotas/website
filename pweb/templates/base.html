@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Paweł Protaś | {% block title %}{% endblock %}</title>
+    <title>Paweł Protaś | {{ _('Software Engineer') }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <script src="{{ url_for('static', filename='js/base.js') }}"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,600" rel="stylesheet">
@@ -16,13 +16,11 @@
     <header>
         <nav class="nav-bar">
             <div class="nav-logo">
-                <a {%- if request.path == url_for('main.index') %} class="active" {% endif %}
-                    href="{{ url_for('main.index') }}">Paweł Protaś</a>
+                <a id="home-button" href="#">Paweł Protaś</a>
             </div>
             <div class="nav-menu">
-                {% for navitem in ['main.about', 'main.portfolio', 'main.contact'] %}
-                <a {%- if request.path == url_for(navitem) %} class="active" {% endif %}
-                    href="{{ url_for(navitem) }}">{{ _(navitem[5:] | capitalize) }}</a>
+                {% for navitem in ['about', 'portfolio', 'contact'] %}
+                <a id="{{ navitem }}-button" href="#{{ navitem }}">{{ _(navitem | capitalize) }}</a>
                 {% endfor %}
             </div>
         </nav>

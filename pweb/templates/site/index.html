@@ -2,19 +2,59 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<div class="container black fullscreen">
-    <div class="card">
+<div id="home" class="container black fullscreen">
+    <div class="card column">
         <div class="name">Paweł Protaś</div>
         <div class="description">{{ _('Software Engineering student and developer.') }}</div>
-        <a class="more-button" href="#after">
+        <a class="more-button" href="#about">
             <div>{{ _('Read more.')}}</div>
             <div class="arrow"></div>
         </a>
     </div>
 </div>
-<div id="after" class="container white">
+<div id="about" class="container white cropped">
+    <div class="container-header">{{ _('About') }}</div>
     <div class="card">
-        
+        <div class="card-item">
+            <img src="{{ url_for('static', filename='img/profile.jpg') }}" alt="{{ _('Profile Picture') }}">
+        </div>
+        <div class="card-item">
+            <div class="card-item-title">{{ _('Backstory')}}</div>
+            <p>
+                {{ _('I am an aspiring software developer located in The Netherlands, currently occupied with obtaining my Software Engineering bachelor.') }}
+            </p>
+            <p>
+                {{ _('I\'ve built websites, programs, mobile applications, AI-operated robots, smart home gadgets and games. Interested? Check out out my') }} <a href="#portfolio">{{ _('portfolio') }}</a> {{ _('or') }} <a href="#contact">{{ _('reach out to me.') }}</a>
+            </p>
+            <div>
+                <a href="https://github.com/pprotas" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/pawel-protas/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+        <div class="card-item">
+            <div class="card-item-title">{{ _('What else...') }}</div>
+            <p>
+                {{ _('Other than that, i enjoy listening to and creating Hip-Hop and Techno, attending festivals and hitting the gym.') }}
+            </p>
+        </div>
+    </div>
+</div>
+<div id="portfolio" class="container black cropped">
+    <div class="container-header">{{ _('Portfolio') }}</div>
+    Under construction.
+</div>
+<div id="contact" class="container white fullscreen">
+    <div class="container-header">{{ _('Contact') }}</div>
+    <div class="card">
+        <div class="card-item">
+            <div class="card-item-title">E-Mail</div>
+            <p>pawprotas@gmail.com</p>
+        </div>
+        <div class="card-item">
+            <div class="card-item-title">Other</div>
+            <a href="https://github.com/pprotas" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/pawel-protas/" target="_blank">LinkedIn</a>
+        </div>
     </div>
 </div>
 {% endblock %}

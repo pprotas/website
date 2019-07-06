@@ -2,16 +2,17 @@
 
 /* VARIABLES */
 $desktop-breakpoint:1280px; // The width at which to show the full version
-$main-color        : white;
-$secondary-color   : black;
-$accent-color      : #ab865b;
-$link-color        : gray;
+$mobile-breakpoint:600hpx;
+$main-color : white;
+$secondary-color : black;
+$accent-color : #ab865b;
+$link-color : gray;
 
 /* HTML & BODY */
 html,
 body {
-    margin     : 0;
-    padding    : 0;
+    margin: 0;
+    padding: 0;
     font-family: 'Source Code Pro', monospace;
 }
 
@@ -20,15 +21,15 @@ html {
 }
 
 body {
-    display        : grid;
-    justify-items  : center;
+    display: grid;
+    justify-items: center;
 
     a {
-        color          : $link-color;
+        color: $link-color;
         text-decoration: none;
-        padding        : 1vh;
-        margin         : -1vh;
-        transition     : color 0.25s, text-shadow 0.25s;
+        padding: 1vh;
+        //margin: -1vh;
+        transition: color 0.25s, text-shadow 0.25s;
 
         &:hover {
             text-shadow: 0px 0px 1px $secondary-color;
@@ -40,57 +41,57 @@ body {
 /* HEADER */
 header {
     background-color: transparent;
-    display         : flex;
-    justify-content : center;
-    width           : 100%;
-    height          : 60px;
-    position        : fixed;
-    transition      : height 0.2s, background-color 0.2s, box-shadow 0.2s;
-    z-index         : 999;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    transition: height 0.2s, background-color 0.2s, box-shadow 0.2s;
+    z-index: 999;
 
     &.scrolled {
         background-color: $main-color;
-        height          : 50px;
-        box-shadow      : 0 1px 5px black;
+        height: 50px;
+        box-shadow: 0 1px 5px gray;
 
         a:hover {
             text-shadow: none;
-            color: $secondary-color; 
+            color: $secondary-color;
         }
     }
 
     .nav-bar {
-        display              : grid;
-        align-items          : center;
+        display: grid;
+        align-items: center;
         grid-template-columns: 30% auto;
-        width                : 90%;
-        height               : 100%;
+        width: 90%;
+        height: 100%;
 
         @media (min-width: $desktop-breakpoint) {
             width: 70%;
         }
 
         a {
-            display     : inline-block;
-            position    : relative;
+            display: inline-block;
+            position: relative;
             justify-self: inherit;
 
-            &.active {
-                font-weight: 600;
-                color      : $accent-color;
+            &:focus {
+                color: $accent-color;
                 text-shadow: none;
             }
         }
 
         .nav-logo {
             justify-self: left;
+            color: $accent-color
         }
 
         .nav-menu {
-            display        : flex;
-            justify-self   : right;
+            display: flex;
+            justify-self: right;
             justify-content: space-between;
-            width          : 100%;
+            width: 100%;
         }
     }
 }
@@ -105,63 +106,112 @@ header {
         width: 100%;
         color: $main-color;
         padding-top: 50px;
+        height: fit-content;
+
         &.fullscreen {
-            height: 100vh;
+            min-height: 100vh;
+        }
+
+        &.cropped {
+            min-height: calc(100vh - 100px - 3em);
         }
 
         &.black {
             background-color: $secondary-color;
-            color           : $main-color;
+            color: $main-color;
         }
 
         &.white {
             background-color: $main-color;
-            color           : $secondary-color;
+            color: $secondary-color;
+        }
+
+        .container-header {
+            color: $accent-color;
+            font-weight: 700;
+            font-size: 3em;
+            width: max-content;
+            margin: 0 auto;
+            padding-bottom: 50px;
         }
     }
 
     .card {
         margin: auto;
-        width : 90%;
-
+        width: auto;
+        display :flex;
+        flex-direction: row;
+        
         @media (min-width: $desktop-breakpoint) {
             width: 70%;
         }
 
-        display       :flex;
-        flex-direction: column;
+        @media (max-width: $mobile-breakpoint){
+            flex-direction: column;
+        }
+
+        &.column {
+            flex-direction: column;
+        }
+
+        .card-item {
+            flex-basis: 100%;
+            padding: 10px 10px;
+
+            img {
+                box-shadow: 1px 1px 5px gray;
+                max-width: 100%;
+                max-height: 100%;
+                height: auto;
+            }
+
+            .card-item-title {
+                color: $accent-color;
+                font-weight: 700;
+                font-size: 1.25em;
+            }
+
+            a {
+                padding: initial;
+                margin: initial;
+                &:hover {
+                    text-shadow: none;
+                    color: $accent-color;
+                }
+            }
+        }
 
         .name {
-            color      : $accent-color;
-            font-size  : 3vmax;
+            color: $accent-color;
+            font-size: 3vmax;
             font-weight: 600;
             margin-top: 30vh;
         }
 
         .description {
-            font-size  : 3vmax;
+            font-size: 3vmax;
             font-weight: 400;
         }
 
         .more-button {
-            margin-top    : 5vmin;
-            align-self    : center;
-            width         : max-content;
-            font-size     : 2.5vmax;
-            display       : flex;
+            margin-top: 5vmin;
+            align-self: center;
+            width: max-content;
+            font-size: 2.5vmax;
+            display: flex;
             flex-direction: column;
-            font-weight   : 300;
+            font-weight: 300;
 
             .arrow {
-                align-self       : center;
-                justify-self     : center;
-                border           : solid;
-                border-width     : 0 2px 2px 0;
-                display          : inline-block;
-                padding          : 3vmin;
-                transform        : rotate(45deg);
+                align-self: center;
+                justify-self: center;
+                border: solid;
+                border-width: 0 2px 2px 0;
+                display: inline-block;
+                padding: 3vmin;
+                transform: rotate(45deg);
                 -webkit-transform: rotate(45deg);
-                z-index          : 1;
+                z-index: 1;
 
             }
         }
