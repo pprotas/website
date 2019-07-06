@@ -9,8 +9,8 @@
 # flask run
 
 # Windows PS:
-# env:FLASK_APP="pweb"
-# env:FLASK_ENV="development"
+# $env:FLASK_APP="pweb"
+# $env:FLASK_ENV="development"
 # flask run
 
 
