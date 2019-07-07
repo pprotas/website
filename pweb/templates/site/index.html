@@ -41,19 +41,65 @@
 </div>
 <div id="portfolio" class="container black cropped">
     <div class="container-header">{{ _('Portfolio') }}</div>
-    Under construction.
+    <div class="card">
+        <div class="card-item">
+            <div class="card-item-title">{{ _('Skills') }}</div>
+            <p>
+                {{ _('I am a well-rounded software engineer with advanced knowledge of the following techniques:') }}
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>PHP, Laravel</li>
+                    <li>C#, .NET, Xamarin</li>
+                    <li>Java</li>
+                    <li>C, C++</li>
+                    <li>Python, Flask</li>
+                    <li>Windows, Linux, Bash, Raspberry Pi, Arduino</li>
+                    <li>Docker, Heroku</li>
+                </ul>
+                {{ _('Of course i am eager to learn new technologies and improve my development toolchain.') }}
+            </p>
+        </div>
+        <div class="card-item">
+            <div class="card-item-title">{{ _('Interesting projects') }}</div>
+            <ul>
+                <li>
+                    <p class="accent">{{ _('This website!') }}</p>
+                    <p>
+                        <a href="www.pawelprotas.me" target="_blank">www.pawelprotas.me</a>{{ _(' is created using my own custom CSS framework, the Python framework Flask and deployed on Heroku using Docker!') }}
+                    </p>
+                </li>
+                <li>
+                    <p class="accent">Robot Harold</p>
+                    <p>
+                        {{ _('Using a Raspbery Pi, an Ardunio and plenty of aluminum we\'ve created a fully functioning robot-tank-spider hybrid which can be controlled using a remote. Harold can also make his own decisions using a TensorFlow AI model.') }}
+                    </p>
+                    <p>
+                        {{ _('Harold won third place during the final robot competition at our school (NHL Stenden, Leeuwarden)! Check him out') }} <a href="www.robotharold.nl" target="_blank">{{ _('here.') }}</a> 
+                    </p>
+                </li>
+                <li>
+                    <p class="accent">{{ _('More?') }}</p>
+                    <p>
+                        {{ _('I have plenty more projects on my GitHub! This includes a simple drawing program made in Java, a 3D JavaScript horror game and a simple Arduino-powered home-security system. Look for yourself') }} <a href="https://github.com/pprotas" target="_blank">{{ _('here.') }}</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
-<div id="contact" class="container white fullscreen">
-    <div class="container-header">{{ _('Contact') }}</div>
+<div id="contact" class="container white cropped">
+    <div class="container-header">Contact</div>
     <div class="card">
         <div class="card-item">
             <div class="card-item-title">E-Mail</div>
             <p>pawprotas@gmail.com</p>
         </div>
         <div class="card-item">
-            <div class="card-item-title">Other</div>
-            <a href="https://github.com/pprotas" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/pawel-protas/" target="_blank">LinkedIn</a>
+            <div class="card-item-title">{{ _('Other') }}</div>
+            <p>
+                <a href="https://github.com/pprotas" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/pawel-protas/" target="_blank">LinkedIn</a>
+            </p>
         </div>
     </div>
 </div>

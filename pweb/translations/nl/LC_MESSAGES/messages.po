@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-04-21 22:14+0200\n"
+"POT-Creation-Date: 2019-07-07 15:44+0200\n"
 "PO-Revision-Date: 2019-04-21 22:14+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: nl\n"
@@ -16,7 +16,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: pweb/templates/base.html:8
+msgid "Software Engineer"
+msgstr "Software Ontwikkelaar"
 
 #: pweb/templates/site/index.html:8
 msgid "Software Engineering student and developer."
@@ -26,5 +30,116 @@ msgstr "Software Engineering student en ontwikkelaar."
 msgid "Read more."
 msgstr "Lees meer."
 
+#: pweb/templates/site/index.html:16
 msgid "About"
 msgstr "Info"
+
+#: pweb/templates/site/index.html:19
+msgid "Profile Picture"
+msgstr "Profielfoto"
+
+#: pweb/templates/site/index.html:22
+msgid "Backstory"
+msgstr "Achtergrond"
+
+#: pweb/templates/site/index.html:24
+msgid ""
+"I am an aspiring software developer located in The Netherlands, currently"
+" occupied with obtaining my Software Engineering bachelor."
+msgstr "Ik ben een ambitieuze software ontwikkelaar, bezig met het behalen van mijn Software Engineering bachelor."
+
+#: pweb/templates/site/index.html:27
+msgid ""
+"I've built websites, programs, mobile applications, AI-operated robots, "
+"smart home gadgets and games. Interested? Check out out my"
+msgstr "Onder anderen heb ik websites, programma's, applicaties, robots met AI-besturing, smart home gadgets en spelletjes. Geïnteresseerd? Neem een kijk in mijn"
+
+#: pweb/templates/site/index.html:27
+msgid "portfolio"
+msgstr "portfolio"
+
+#: pweb/templates/site/index.html:27
+msgid "or"
+msgstr "of"
+
+#: pweb/templates/site/index.html:27
+msgid "reach out to me."
+msgstr "neem contact met me op"
+
+#: pweb/templates/site/index.html:35
+msgid "What else..."
+msgstr "Wat nog meer..."
+
+#: pweb/templates/site/index.html:37
+msgid ""
+"Other than that, i enjoy listening to and creating Hip-Hop and Techno, "
+"attending festivals and hitting the gym."
+msgstr "Hiernaast luister ik naar en maak ik graag Hip-Hop en Techno, bezoek ik festivals en ga ik lekker naar de sportschool!"
+
+#: pweb/templates/site/index.html:43
+msgid "Portfolio"
+msgstr "Portolio"
+
+#: pweb/templates/site/index.html:46
+msgid "Skills"
+msgstr "Vaardigheden"
+
+#: pweb/templates/site/index.html:48
+msgid ""
+"I am a well-rounded software engineer with advanced knowledge of the "
+"following techniques:"
+msgstr "Ik ben een goede ontwikkelaar met geavanceerde kennis van de volgende technieken:"
+
+#: pweb/templates/site/index.html:59
+msgid ""
+"Of course i am eager to learn new technologies and improve my development"
+" toolchain."
+msgstr "Natuurlijk sta ik open voor het leren van nieuwe technieken en het vergroten van mijn kennis"
+
+#: pweb/templates/site/index.html:63
+msgid "Interesting projects"
+msgstr "Interessante projecten"
+
+#: pweb/templates/site/index.html:66
+msgid "This website!"
+msgstr "Deze website!"
+
+#: pweb/templates/site/index.html:68
+msgid ""
+" is created using my own custom CSS framework, the Python framework Flask"
+" and deployed on Heroku using Docker!"
+msgstr "is onwikkeld met gebruik van mijn eigen zelfgemaakte CSS framework, de Python framework Flask en wordt gehost op Heroku met gebruik van Docker!"
+
+#: pweb/templates/site/index.html:74
+msgid ""
+"Using a Raspbery Pi, an Ardunio and plenty of aluminum we've created a "
+"fully functioning robot-tank-spider hybrid which can be controlled using "
+"a remote. Harold can also make his own decisions using a TensorFlow AI "
+"model."
+msgstr "Met een Raspberry Pi, een Arduino en heel veel aluminium hebben we een volledig functionerende robot-tank spin hybride gemaakt, welke bestuurd kan worden met een afstandsbediening of app. Harold kan ook zijn eigen beslissingen maken door behulp van een TensorFlow AI."
+
+#: pweb/templates/site/index.html:77
+msgid ""
+"Harold won third place during the final robot competition at our school "
+"(NHL Stenden, Leeuwarden)! Check him out"
+msgstr "Harold heeft derde plaats behaald tijdens de robot competitie op onze school (NHL Stenden te Leeuwarden). Bekijk hem"
+
+#: pweb/templates/site/index.html:77 pweb/templates/site/index.html:83
+msgid "here."
+msgstr "hier."
+
+#: pweb/templates/site/index.html:81
+msgid "More?"
+msgstr "Meer?"
+
+#: pweb/templates/site/index.html:83
+msgid ""
+"I have plenty more projects on my GitHub! This includes a simple drawing "
+"program made in Java, a 3D JavaScript horror game and a simple Arduino-"
+"powered home-security system. Look for yourself"
+msgstr "Je kan mijn andere projecten bekijken op mijn GitHub profiel! Bijvoorbeeld een simpel tekenprograma gemaakt in Java, een 3D JavaScript horror spel en een simpele Arduino huis beveiliging systeem. Kijk maar zelf"
+
+#: pweb/templates/site/index.html:98
+msgid "Other"
+msgstr "Anders"
+

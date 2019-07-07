@@ -63,7 +63,7 @@ header .nav-bar a {
   position: relative;
   justify-self: inherit;
 }
-header .nav-bar a:focus {
+header .nav-bar a.active {
   color: #ab865b;
   text-shadow: none;
 }
@@ -112,7 +112,7 @@ header .nav-bar .nav-menu {
 }
 .content .card {
   margin: auto;
-  width: auto;
+  width: 90%;
   display: flex;
   flex-direction: row;
 }
@@ -121,7 +121,7 @@ header .nav-bar .nav-menu {
     width: 70%;
   }
 }
-@media (max-width: 600hpx) {
+@media (max-width: 600px) {
   .content .card {
     flex-direction: column;
   }
@@ -158,9 +158,19 @@ header .nav-bar .nav-menu {
   font-weight: 600;
   margin-top: 30vh;
 }
+@media (max-width: 1280px) {
+  .content .card .name {
+    font-size: 2em;
+  }
+}
 .content .card .description {
   font-size: 3vmax;
   font-weight: 400;
+}
+@media (max-width: 1280px) {
+  .content .card .description {
+    font-size: 1.5em;
+  }
 }
 .content .card .more-button {
   margin-top: 5vmin;
@@ -170,6 +180,11 @@ header .nav-bar .nav-menu {
   display: flex;
   flex-direction: column;
   font-weight: 300;
+}
+@media (max-width: 1280px) {
+  .content .card .more-button {
+    font-size: 1.5em;
+  }
 }
 .content .card .more-button .arrow {
   align-self: center;
@@ -181,6 +196,10 @@ header .nav-bar .nav-menu {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   z-index: 1;
+}
+
+.accent {
+  color: #ab865b;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,7 +2,7 @@
 
 /* VARIABLES */
 $desktop-breakpoint:1280px; // The width at which to show the full version
-$mobile-breakpoint:600hpx;
+$mobile-breakpoint:600px;
 $main-color : white;
 $secondary-color : black;
 $accent-color : #ab865b;
@@ -76,7 +76,7 @@ header {
             position: relative;
             justify-self: inherit;
 
-            &:focus {
+            &.active {
                 color: $accent-color;
                 text-shadow: none;
             }
@@ -138,7 +138,7 @@ header {
 
     .card {
         margin: auto;
-        width: auto;
+        width: 90%;
         display :flex;
         flex-direction: row;
         
@@ -186,11 +186,19 @@ header {
             font-size: 3vmax;
             font-weight: 600;
             margin-top: 30vh;
+
+            @media (max-width: $desktop-breakpoint){
+                font-size: 2em;
+            }
         }
 
         .description {
             font-size: 3vmax;
             font-weight: 400;
+
+            @media (max-width: $desktop-breakpoint){
+                font-size: 1.5em;
+            }
         }
 
         .more-button {
@@ -201,6 +209,10 @@ header {
             display: flex;
             flex-direction: column;
             font-weight: 300;
+
+            @media (max-width: $desktop-breakpoint){
+                font-size: 1.5em;
+            }
 
             .arrow {
                 align-self: center;
@@ -216,4 +228,8 @@ header {
             }
         }
     }
+}
+
+.accent {
+    color: $accent-color
 }

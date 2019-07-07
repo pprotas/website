@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-07-04 16:13+0200\n"
+"POT-Creation-Date: 2019-07-07 15:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,128 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.7.0\n"
 
+#: pweb/templates/base.html:8
+msgid "Software Engineer"
+msgstr ""
+
 #: pweb/templates/site/index.html:8
 msgid "Software Engineering student and developer."
 msgstr ""
 
 #: pweb/templates/site/index.html:10
 msgid "Read more."
+msgstr ""
+
+#: pweb/templates/site/index.html:16
+msgid "About"
+msgstr ""
+
+#: pweb/templates/site/index.html:19
+msgid "Profile Picture"
+msgstr ""
+
+#: pweb/templates/site/index.html:22
+msgid "Backstory"
+msgstr ""
+
+#: pweb/templates/site/index.html:24
+msgid ""
+"I am an aspiring software developer located in The Netherlands, currently"
+" occupied with obtaining my Software Engineering bachelor."
+msgstr ""
+
+#: pweb/templates/site/index.html:27
+msgid ""
+"I've built websites, programs, mobile applications, AI-operated robots, "
+"smart home gadgets and games. Interested? Check out out my"
+msgstr ""
+
+#: pweb/templates/site/index.html:27
+msgid "portfolio"
+msgstr ""
+
+#: pweb/templates/site/index.html:27
+msgid "or"
+msgstr ""
+
+#: pweb/templates/site/index.html:27
+msgid "reach out to me."
+msgstr ""
+
+#: pweb/templates/site/index.html:35
+msgid "What else..."
+msgstr ""
+
+#: pweb/templates/site/index.html:37
+msgid ""
+"Other than that, i enjoy listening to and creating Hip-Hop and Techno, "
+"attending festivals and hitting the gym."
+msgstr ""
+
+#: pweb/templates/site/index.html:43
+msgid "Portfolio"
+msgstr ""
+
+#: pweb/templates/site/index.html:46
+msgid "Skills"
+msgstr ""
+
+#: pweb/templates/site/index.html:48
+msgid ""
+"I am a well-rounded software engineer with advanced knowledge of the "
+"following techniques:"
+msgstr ""
+
+#: pweb/templates/site/index.html:59
+msgid ""
+"Of course i am eager to learn new technologies and improve my development"
+" toolchain."
+msgstr ""
+
+#: pweb/templates/site/index.html:63
+msgid "Interesting projects"
+msgstr ""
+
+#: pweb/templates/site/index.html:66
+msgid "This website!"
+msgstr ""
+
+#: pweb/templates/site/index.html:68
+msgid ""
+" is created using my own custom CSS framework, the Python framework Flask"
+" and deployed on Heroku using Docker!"
+msgstr ""
+
+#: pweb/templates/site/index.html:74
+msgid ""
+"Using a Raspbery Pi, an Ardunio and plenty of aluminum we've created a "
+"fully functioning robot-tank-spider hybrid which can be controlled using "
+"a remote. Harold can also make his own decisions using a TensorFlow AI "
+"model."
+msgstr ""
+
+#: pweb/templates/site/index.html:77
+msgid ""
+"Harold won third place during the final robot competition at our school "
+"(NHL Stenden, Leeuwarden)! Check him out"
+msgstr ""
+
+#: pweb/templates/site/index.html:77 pweb/templates/site/index.html:83
+msgid "here."
+msgstr ""
+
+#: pweb/templates/site/index.html:81
+msgid "More?"
+msgstr ""
+
+#: pweb/templates/site/index.html:83
+msgid ""
+"I have plenty more projects on my GitHub! This includes a simple drawing "
+"program made in Java, a 3D JavaScript horror game and a simple Arduino-"
+"powered home-security system. Look for yourself"
+msgstr ""
+
+#: pweb/templates/site/index.html:98
+msgid "Other"
 msgstr ""
 

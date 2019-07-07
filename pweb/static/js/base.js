@@ -1,9 +1,7 @@
 window.onload = () => {
     var header = document.getElementsByTagName("header")[0];
 
-    var home = document.getElementById("home");
     var homeButton = document.getElementById("home-button");
-    homeButton.focus();
 
     var about = document.getElementById("about");
     var aboutButton = document.getElementById("about-button");
@@ -24,17 +22,29 @@ window.onload = () => {
             header.classList.remove("scrolled");
         }
 
-        if (window.scrollY < about.offsetTop) {
-            homeButton.focus();
+        if (window.scrollY + window.innerHeight / 2 < about.offsetTop) {
+            homeButton.classList.add("active");
+            aboutButton.classList.remove("active");
+            portfolioButton.classList.remove("active");
+            contactButton.classList.remove("active");
         }
-        else if (window.scrollY < portfolio.offsetTop) {
-            aboutButton.focus();
+        else if (window.scrollY + window.innerHeight / 2 < portfolio.offsetTop) {
+            homeButton.classList.remove("active");
+            aboutButton.classList.add("active");
+            portfolioButton.classList.remove("active");
+            contactButton.classList.remove("active");
         }
-        else if (window.scrollY < contact.offsetTop) {
-            portfolioButton.focus();
+        else if (window.scrollY+ window.innerHeight / 2  < contact.offsetTop) {
+            homeButton.classList.remove("active");
+            aboutButton.classList.remove("active");
+            portfolioButton.classList.add("active");
+            contactButton.classList.remove("active");
         }
         else {
-            contactButton.focus();
+            homeButton.classList.remove("active");
+            aboutButton.classList.remove("active");
+            portfolioButton.classList.remove("active");
+            contactButton.classList.add("active");
         }
     }
 };
