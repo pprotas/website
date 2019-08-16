@@ -5,7 +5,7 @@ $desktop-breakpoint:1280px; // The width at which to show the full version
 $mobile-breakpoint:600px;
 $main-color : white;
 $secondary-color : black;
-$accent-color : #ab865b;
+$accent-color : #3189a3;
 $link-color : gray;
 
 /* HTML & BODY */
@@ -139,14 +139,14 @@ header {
     .card {
         margin: auto;
         width: 90%;
-        display :flex;
+        display: flex;
         flex-direction: row;
-        
+
         @media (min-width: $desktop-breakpoint) {
             width: 70%;
         }
 
-        @media (max-width: $mobile-breakpoint){
+        @media (max-width: $mobile-breakpoint) {
             flex-direction: column;
         }
 
@@ -174,6 +174,7 @@ header {
             a {
                 padding: initial;
                 margin: initial;
+
                 &:hover {
                     text-shadow: none;
                     color: $accent-color;
@@ -185,9 +186,9 @@ header {
             color: $accent-color;
             font-size: 3vmax;
             font-weight: 600;
-            margin-top: 30vh;
 
-            @media (max-width: $desktop-breakpoint){
+
+            @media (max-width: $desktop-breakpoint) {
                 font-size: 2em;
             }
         }
@@ -196,7 +197,7 @@ header {
             font-size: 3vmax;
             font-weight: 400;
 
-            @media (max-width: $desktop-breakpoint){
+            @media (max-width: $desktop-breakpoint) {
                 font-size: 1.5em;
             }
         }
@@ -210,7 +211,7 @@ header {
             flex-direction: column;
             font-weight: 300;
 
-            @media (max-width: $desktop-breakpoint){
+            @media (max-width: $desktop-breakpoint) {
                 font-size: 1.5em;
             }
 
@@ -232,4 +233,26 @@ header {
 
 .accent {
     color: $accent-color
+}
+
+.lang-bar {
+    padding-left: 15%;
+
+    @media (max-width: $desktop-breakpoint) {
+        padding-left: 5%;
+    }
+
+    margin-top: 30vh;
+
+    .lang-img {
+        width: 40px;
+
+        &.dutch {
+            background-image: url("/static/img/dutch.png");
+        }
+
+        &.english {
+            background-image: url("/static/img/english.png");
+        }
+    }
 }

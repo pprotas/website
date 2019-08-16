@@ -46,13 +46,18 @@ msgstr "Achtergrond"
 msgid ""
 "I am an aspiring software developer located in The Netherlands, currently"
 " occupied with obtaining my Software Engineering bachelor."
-msgstr "Ik ben een ambitieuze software ontwikkelaar, bezig met het behalen van mijn Software Engineering bachelor."
+msgstr ""
+"Ik ben een ambitieuze software ontwikkelaar, bezig met het behalen van "
+"mijn Software Engineering bachelor."
 
 #: pweb/templates/site/index.html:27
 msgid ""
 "I've built websites, programs, mobile applications, AI-operated robots, "
 "smart home gadgets and games. Interested? Check out out my"
-msgstr "Onder anderen heb ik websites, programma's, applicaties, robots met AI-besturing, smart home gadgets en spelletjes. Geïnteresseerd? Neem een kijk in mijn"
+msgstr ""
+"Onder andere heb ik websites, programma's, applicaties, robots met AI-"
+"besturing, smart home gadgets en spelletjes. Geïnteresseerd? Neem een "
+"kijk in mijn"
 
 #: pweb/templates/site/index.html:27
 msgid "portfolio"
@@ -74,11 +79,13 @@ msgstr "Wat nog meer..."
 msgid ""
 "Other than that, i enjoy listening to and creating Hip-Hop and Techno, "
 "attending festivals and hitting the gym."
-msgstr "Hiernaast luister ik naar en maak ik graag Hip-Hop en Techno, bezoek ik festivals en ga ik lekker naar de sportschool!"
+msgstr ""
+"Hiernaast luister ik naar en maak ik graag Hip-Hop en Techno, bezoek ik "
+"festivals en ga ik lekker naar de sportschool!"
 
 #: pweb/templates/site/index.html:43
 msgid "Portfolio"
-msgstr "Portolio"
+msgstr "Portfolio"
 
 #: pweb/templates/site/index.html:46
 msgid "Skills"
@@ -88,13 +95,17 @@ msgstr "Vaardigheden"
 msgid ""
 "I am a well-rounded software engineer with advanced knowledge of the "
 "following techniques:"
-msgstr "Ik ben een goede ontwikkelaar met geavanceerde kennis van de volgende technieken:"
+msgstr ""
+"Ik ben een goede ontwikkelaar met geavanceerde kennis van de volgende "
+"technieken:"
 
 #: pweb/templates/site/index.html:59
 msgid ""
 "Of course i am eager to learn new technologies and improve my development"
 " toolchain."
-msgstr "Natuurlijk sta ik open voor het leren van nieuwe technieken en het vergroten van mijn kennis"
+msgstr ""
+"Natuurlijk sta ik open voor het leren van nieuwe technieken en het "
+"vergroten van mijn kennis"
 
 #: pweb/templates/site/index.html:63
 msgid "Interesting projects"
@@ -108,7 +119,9 @@ msgstr "Deze website!"
 msgid ""
 " is created using my own custom CSS framework, the Python framework Flask"
 " and deployed on Heroku using Docker!"
-msgstr "is onwikkeld met gebruik van mijn eigen zelfgemaakte CSS framework, de Python framework Flask en wordt gehost op Heroku met gebruik van Docker!"
+msgstr ""
+" is onwikkeld met gebruik van mijn eigen zelfgemaakte CSS framework, de "
+"Python framework Flask en wordt gehost op Heroku met gebruik van Docker!"
 
 #: pweb/templates/site/index.html:74
 msgid ""
@@ -116,13 +129,19 @@ msgid ""
 "fully functioning robot-tank-spider hybrid which can be controlled using "
 "a remote. Harold can also make his own decisions using a TensorFlow AI "
 "model."
-msgstr "Met een Raspberry Pi, een Arduino en heel veel aluminium hebben we een volledig functionerende robot-tank spin hybride gemaakt, welke bestuurd kan worden met een afstandsbediening of app. Harold kan ook zijn eigen beslissingen maken door behulp van een TensorFlow AI."
+msgstr ""
+"Met een Raspberry Pi, een Arduino en heel veel aluminium hebben we een "
+"volledig functionerende robot-tank spin hybride gemaakt, welke bestuurd "
+"kan worden met een afstandsbediening of app. Harold kan ook zijn eigen "
+"beslissingen maken door behulp van een TensorFlow AI."
 
 #: pweb/templates/site/index.html:77
 msgid ""
 "Harold won third place during the final robot competition at our school "
 "(NHL Stenden, Leeuwarden)! Check him out"
-msgstr "Harold heeft derde plaats behaald tijdens de robot competitie op onze school (NHL Stenden te Leeuwarden). Bekijk hem"
+msgstr ""
+"Harold heeft derde plaats behaald tijdens de robot competitie op onze "
+"school (NHL Stenden te Leeuwarden). Bekijk hem"
 
 #: pweb/templates/site/index.html:77 pweb/templates/site/index.html:83
 msgid "here."
@@ -137,7 +156,11 @@ msgid ""
 "I have plenty more projects on my GitHub! This includes a simple drawing "
 "program made in Java, a 3D JavaScript horror game and a simple Arduino-"
 "powered home-security system. Look for yourself"
-msgstr "Je kan mijn andere projecten bekijken op mijn GitHub profiel! Bijvoorbeeld een simpel tekenprograma gemaakt in Java, een 3D JavaScript horror spel en een simpele Arduino huis beveiliging systeem. Kijk maar zelf"
+msgstr ""
+"Je kan mijn andere projecten bekijken op mijn GitHub profiel! "
+"Bijvoorbeeld een simpel tekenprograma gemaakt in Java, een 3D JavaScript "
+"horror spel en een simpele Arduino huis beveiliging systeem. Kijk maar "
+"zelf"
 
 #: pweb/templates/site/index.html:98
 msgid "Other"

@@ -1,0 +1,3 @@
+BABEL_DEFAULT_LOCALE = 'nl'
+SESSION_TYPE = 'memcached'
+SECRET_KEY = 'secretkey'

@@ -18,3 +18,4 @@ _mailinglist
 docs/_build/
 .vscode
 node_modules
+config.py

@@ -1,7 +1,5 @@
 # Linux:
-# export FLASK_APP=pweb
-# export FLASK_ENV=development
-# flask run
+# export FLASK_APP=pweb && export FLASK_ENV=development && export PWEB_SETTINGS=config.cfg && flask run
 
 # Windows cmd:
 # set FLASK_APP=pweb
